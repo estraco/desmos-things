@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "removeComments": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "allowUnreachableCode": false,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "outDir": "./build",
+    "downlevelIteration": true
+  },
+  "watch": true
+}
