@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { RGBAarrType } from '../../image-utils/build/index'
+import { RGBAarrType } from 'png-to-rgba'
 import _ from 'lodash'
 
 type CompressedGraph = {
