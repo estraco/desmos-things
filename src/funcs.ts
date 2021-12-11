@@ -41,9 +41,9 @@ function imageToGraph(img: RGBAarrType) {
                 id: i + j,
                 color: `#${image[i][j].splice(0, 3).map(a => a.toString(16).padStart(2, '0')).join('')}`,
                 latex: `${round(j * .1)}\\le x\\le${round((j + 1) * .1)}\\left\\{${round(i * .1)}\\le y\\le${round((i + 1) * .1)}\\right\\}`,
-                fillOpacity: "1",
-                lineOpacity: "1",
-                lineWidth: "2"
+                fillOpacity: image[i][j]?.[3] ? round(image[i][j][3] / 255) : '1',
+                lineOpacity: image[i][j]?.[3] ? round(image[i][j][3] / 255) : '1',
+                lineWidth: '2'
             })
         }
     }
